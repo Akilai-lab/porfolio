@@ -1,0 +1,112 @@
+ @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: 5px;
+      opacity: 1;
+    }
+  }
+/** BODY **/
+
+/** HEADER **/
+
+/** SECTION **/
+@-webkit-keyframes slide-bottom {
+    0% {
+        transform:scale(0);
+        width: 0;
+        height: 0;
+    }
+    100% {
+        transform:scale(1);
+        width: 100%;
+        height: auto;
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+        transform:scale(0);
+        width: 0;
+        height: 0;
+    }
+    100% {
+        transform:scale(1);
+        width: 100%;
+        height: auto;
+    }
+  }
+
+  @-webkit-keyframes rotate-180-cw {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
+  @keyframes rotate-180-cw {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
+.title h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 25px;
+    color: white;
+}
+.title .tracking-in-contract {
+    -webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.slide-bottom {
+	-webkit-animation: slide-bottom 0.6s ease-out 1.5s both;
+	        animation: slide-bottom 0.6s ease-out 1.5s both;
+}
+.rotate-180-cw:hover {
+	-webkit-animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.rotate-180-cw:active {
+	-webkit-animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/** WEB **/
+
+/** GRAPH **/
+
+/** CONTACT **/
+
+/** RESPONSIVE TABLETTE **/
+@media (min-width: 768px) and (max-width: 1090px){
+}
+@media (min-width: 481px) and (max-width: 767px) {
+}
+/** MOBILE **/
+@media (max-width: 480px) {
+}
