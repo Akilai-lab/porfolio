@@ -1,4 +1,4 @@
- @-webkit-keyframes tracking-in-contract {
+@-webkit-keyframes tracking-in-contract {
     0% {
       letter-spacing: 1em;
       opacity: 0;
@@ -24,12 +24,7 @@
       opacity: 1;
     }
   }
-/** BODY **/
-
-/** HEADER **/
-
-/** SECTION **/
-@-webkit-keyframes slide-bottom {
+  @-webkit-keyframes slide-bottom {
     0% {
         transform:scale(0);
         width: 0;
@@ -53,32 +48,44 @@
         height: auto;
     }
   }
-
-  @-webkit-keyframes rotate-180-cw {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
-    }
-  }
-  @keyframes rotate-180-cw {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
-    }
-  }
+/** BODY **/
+@font-face {
+  font-family: "Alex Brush";
+  src: url('./fonts/AlexBrush-Regular.ttf');
+}
+@font-face {
+  font-family: "Script kaushan";
+  src: url('./fonts/KaushanScript-Regular.otf');
+}
+@font-face {
+  font-family: "Tillana";
+  src: url('./fonts/tillana-regular.ttf');
+}
+/** HEADER **/
+header {
+  background-image: url('./assets/pictureHeader.png');
+  height: 600px;
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.title {
+  width: 45%;
+  height: 15%;
+  margin:auto;
+  position: absolute;
+  left: 25%;
+}
 .title h1 {
     text-align: center;
     letter-spacing: 5px;
     font-size: 25px;
     color: white;
+    background-color: #630f7680;
+    padding-top: 10%;
+    padding-bottom: 8%;
+    font-size: 45px;
+    font-variant: petite-caps;
 }
 .title .tracking-in-contract {
     -webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -88,25 +95,359 @@
 	-webkit-animation: slide-bottom 0.6s ease-out 1.5s both;
 	        animation: slide-bottom 0.6s ease-out 1.5s both;
 }
-.rotate-180-cw:hover {
-	-webkit-animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+h1 {
+  font-family: "Tillana";
 }
-.rotate-180-cw:active {
-	-webkit-animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: rotate-180-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+header ul {
+  margin-bottom: 100%;
+  position: relative;
+  top: 70%;
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+  background-color: #630f7680;
+  padding: 2% 10%;
 }
+header ul li {
+  font-family: "Tillana";
+  margin-bottom: 1.5%;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+h2 {
+  font-family: "Tillana";
+  text-transform: uppercase;
+  color: #25296a;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 70px;
+}
+h2 span {
+  color: #630f78;
+}
+/** SECTION **/
 /** WEB **/
+#galleryWeb {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+.inactifWeb{
+  align-items: center;
+  background-color: steelblue;
+  width: 500px;
+  padding: 10% 5%;
+  display: flex;
+  margin-bottom: 2%;
+  justify-content: right;
+  flex-direction: row-reverse;
+  cursor:pointer;
+}
 
+.actifWeb  {
+  align-items: center;
+  /*background-color: steelblue;*/
+  width: 500px;
+  padding: 20% 5%;
+  display: flex;
+  margin-bottom: 2%;
+  justify-content: right;
+  flex-direction: row-reverse;
+  cursor:pointer;
+}
+
+.titleWeb {
+  width: 60%;
+  margin-left: 10%;
+}
+.titleWeb h2 {
+  text-transform: uppercase;
+  color: #25296a;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 70px;
+}
+.titleWeb h2 span {
+  color: #a9ab0b;
+}
+.titleWeb p {
+  width: 90%;
+  text-align: left;
+  margin-top: 10%;
+}
+/* 
+style="background-color: white;border-radius: 50%;padding: 1% 2%;margin-left: 5%;cursor:pointer;"  */
 /** GRAPH **/
+#galleryGraph {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.titleArt {
+  width: 60%;
+}
+.titleArt p {
+  width: 90%;
+  text-align: right;
+  margin-top: 10%;
+}
+.inactif{
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 3px #000000a6;
+  width: 500px;
+  padding: 10% 5%;
+  display: flex;
+  margin-bottom: 2%;
+  justify-content: right;
+  flex-direction: row-reverse;
+  cursor:pointer;
+}
 
+.inactif p {
+  background-color: white;
+  padding: 2%;
+  font-weight: bold;
+}
+.actif  {
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 3px #000000a6;
+  width: 500px;
+  padding: 20% 5%;
+  display: flex;
+  margin-bottom: 2%;
+  justify-content: right;
+  flex-direction: row-reverse;
+  cursor:pointer;
+}
+
+.actif  p {
+  background-color: white;
+  padding: 2%;
+  font-weight: bold;
+}
 /** CONTACT **/
-
+#contact {
+  background-image: url('./assets/pictureFooter.png');
+  background-size: 100%;
+  height: 200px;
+  background-position: 30% 32%;
+  background-repeat: no-repeat;
+}
+h3 {
+  color: white;
+  font-weight: 600;
+  text-align:center;
+  padding-top: 4%;
+} 
+#contact p {
+  color: white;
+  text-align: center;
+}
+#contact p  a {
+  color: white;
+  text-decoration:none;
+  cursor:pointer;
+}
 /** RESPONSIVE TABLETTE **/
 @media (min-width: 768px) and (max-width: 1090px){
+  header {
+    background-position: unset;
+  }
+  header ul {
+    top: 68%;
+  }
+  #galleryGraph {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .titleArt {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+  }
+  .titleArt p {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .projectSmall {
+    width: 455px;
+    margin: 2% auto;
+  }
+  .projectsDeployed {
+    width: 455px;
+    margin: 2% auto;
+  }
+  
+  #galleryWeb {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+  }
+  .titleWeb {
+    width: 100%;
+    margin: auto;
+  }
+  .titleWeb h2 {
+    text-align: center;
+  }
+  .titleWeb p {
+    text-align: center;
+    margin-top: 5%;
+    width: 90%;
+  }
+  .projectsWebSmall {
+    width: 455px;
+    margin: 2% auto;
+  }
+  .projectsWebDeployed {
+    width: 455px;
+    margin: 2% auto;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px) {
+  header {
+    background-position: unset;
+  }
+  header ul {
+    top: 68%;
+  }
+  #galleryGraph {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .titleArt {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+  }
+  .titleArt p {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .projectSmall {
+    width: 455px;
+    margin: 2% auto;
+  }
+  .projectsDeployed {
+    width: 455px;
+    margin: 2% auto;
+  }
+  
+  #galleryWeb {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+  }
+  .titleWeb {
+    width: 100%;
+    margin: auto;
+  }
+  .titleWeb h2 {
+    text-align: center;
+  }
+  .titleWeb p {
+    text-align: center;
+    margin-top: 5%;
+    width: 90%;
+  }
+  .projectsWebSmall {
+    width: 455px;
+    margin: 2% auto;
+  }
+  .projectsWebDeployed {
+    width: 455px;
+    margin: 2% auto;
+  }
 }
 /** MOBILE **/
 @media (max-width: 480px) {
+  header {
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+  }
+  header ul {
+    top: 68%;
+  }
+  header ul li a {
+    font-size: 20px;
+  }
+  h1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 26px !important;
+  }
+  #galleryGraph {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .title {
+    width: auto;
+    height: 200px;
+    left: 19%;
+  }
+  .titleArt {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .titleArt p {
+    text-align: center;
+    margin: auto;
+  }
+  .projectSmall {
+    width: 90%;
+    margin: 2% auto;
+  }
+  .projectsDeployed {
+    width: 90%;
+    margin: 2% auto;
+  }
+  
+  #galleryWeb {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+  }
+  .titleWeb {
+    width: 100%;
+    margin: auto;
+  }
+  .titleWeb h2 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .titleWeb p {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+  .projectsWebSmall {
+    width: 90%;
+    margin: 2% auto;
+  }
+  .projectsWebDeployed {
+    width: 90%;
+    margin: 2% auto;
+  }
 }
