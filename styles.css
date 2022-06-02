@@ -63,7 +63,7 @@
 }
 /** HEADER **/
 header {
-  background-image: url('./assets/pictureHeader.png');
+  background-image: url('./assets/pictureHeader.webp');
   height: 600px;
   background-position: bottom;
   background-size: 100%;
@@ -240,7 +240,7 @@ style="background-color: white;border-radius: 50%;padding: 1% 2%;margin-left: 5%
 }
 /** CONTACT **/
 #contact {
-  background-image: url('./assets/pictureFooter.png');
+  background-image: url('./assets/pictureFooter.webp');
   background-size: 100%;
   height: 200px;
   background-position: 30% 32%;
